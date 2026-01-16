@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Không tìm thấy trang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }</style>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-50 items-center justify-center text-center px-4">
+
+    <div class="max-w-lg w-full">
+        <!-- Illustration using Emoji or simple shapes -->
+        <div class="text-9xl font-black text-slate-200 select-none mb-4">404</div>
+        
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">Lạc đường rồi Runner ơi!</h1>
+        <p class="text-slate-500 text-lg mb-8">
+            Có vẻ như bạn đã chạy quá xa khỏi lộ trình. Trang bạn đang tìm kiếm không tồn tại hoặc đã bị dời đi.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="home.html" class="flex items-center justify-center px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg shadow-lg transition-all">
+                <i data-lucide="home" class="w-5 h-5 mr-2"></i> Quay về vạch xuất phát
+            </a>
+            <button onclick="history.back()" class="flex items-center justify-center px-8 py-3 bg-white border border-gray-300 hover:bg-gray-50 text-slate-700 font-bold rounded-lg transition-all">
+                <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i> Quay lại
+            </button>
+        </div>
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - VN RunClub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-pattern {
+            background-color: #0f172a;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e293b' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+    <!-- Left Side: Image / Brand -->
+    <div class="hidden lg:flex w-1/2 bg-pattern relative items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-slate-900/80 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&q=80&w=1600" class="absolute inset-0 w-full h-full object-cover grayscale opacity-50">
+        
+        <div class="relative z-20 text-center px-12">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-orange-600 rounded-2xl mb-8 shadow-2xl rotate-3">
+                <i data-lucide="user-plus" class="text-white w-10 h-10"></i>
+            </div>
+            <h1 class="text-5xl font-bold text-white mb-4 font-display tracking-wide">Gia nhập đội ngũ</h1>
+            <p class="text-xl text-slate-300 font-light">Bắt đầu hành trình chinh phục bản thân ngay hôm nay.</p>
+        </div>
+    </div>
+
+    <!-- Right Side: Register Form -->
+    <div class="w-full lg:w-1/2 bg-white flex items-center justify-center p-8 overflow-y-auto">
+        <div class="max-w-md w-full">
+            <div class="text-center mb-10 lg:hidden">
+                <div class="inline-flex items-center justify-center w-12 h-12 bg-orange-600 rounded-lg mb-4">
+                    <i data-lucide="activity" class="text-white w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-900">VN RunClub</h2>
+            </div>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">Tạo tài khoản mới</h2>
+            <p class="text-slate-500 mb-8">Trở thành thành viên chính thức để nhận quyền lợi độc quyền.</p>
+
+            <button class="w-full bg-[#FC4C02] hover:bg-[#E34402] text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center shadow-lg shadow-orange-200 transition-all transform hover:-translate-y-0.5 mb-6">
+                <i data-lucide="zap" class="w-5 h-5 mr-3"></i>
+                Đăng ký nhanh bằng Strava
+            </button>
+
+            <div class="relative mb-6">
+                <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200"></div></div>
+                <div class="relative flex justify-center text-sm"><span class="px-2 bg-white text-slate-500">Hoặc điền thông tin</span></div>
+            </div>
+
+            <form class="space-y-4" action="home.html">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Họ</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="Nguyễn">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Tên</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="Văn A">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                    <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="runner@example.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">Mật khẩu</label>
+                    <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="Tối thiểu 8 ký tự">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">Xác nhận mật khẩu</label>
+                    <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none" placeholder="Nhập lại mật khẩu">
+                </div>
+                
+                <div class="flex items-start mt-4">
+                    <div class="flex items-center h-5">
+                        <input id="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-orange-300" required>
+                    </div>
+                    <label for="terms" class="ml-2 text-sm font-medium text-gray-900">Tôi đồng ý với <a href="rules.html" class="text-orange-600 hover:underline">Quy chế thành viên</a> và <a href="#" class="text-orange-600 hover:underline">Chính sách bảo mật</a>.</label>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-lg transition-colors mt-6">
+                    Đăng ký thành viên
+                </button>
+            </form>
+
+            <p class="mt-8 text-center text-sm text-slate-600">
+                Đã có tài khoản? <a href="login.html" class="text-orange-600 font-bold hover:underline">Đăng nhập</a>
+            </p>
+        </div>
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

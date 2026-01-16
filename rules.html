@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy chế - VN RunClub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; } h1 { font-family: 'Oswald', sans-serif; }</style>
+</head>
+<body class="flex flex-col min-h-screen text-slate-900">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="home.html" class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center transform -rotate-6">
+                    <i data-lucide="activity" class="text-white w-5 h-5"></i>
+                </div>
+                <span class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">VN RunClub</span>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-1">
+                <a href="home.html" class="flex items-center space-x-2 px-3 py-2 rounded-md text-gray-600 hover:bg-gray-50"><i data-lucide="home" class="w-4 h-4"></i><span>Trang chủ</span></a>
+                <a href="rules.html" class="flex items-center space-x-2 px-3 py-2 rounded-md text-orange-600 bg-orange-50 font-semibold"><i data-lucide="scroll-text" class="w-4 h-4"></i><span>Quy chế</span></a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-4">
+            <a href="home.html" class="block px-3 py-2 text-gray-600">Trang chủ</a>
+            <a href="rules.html" class="block px-3 py-2 text-orange-600 font-bold">Quy chế</a>
+        </div>
+    </header>
+
+    <main class="flex-grow animate-fade-in bg-gray-50 pb-12 w-full">
+        <div class="bg-slate-900 text-white py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h1 class="text-3xl md:text-5xl font-bold mb-4 font-display">Quy Chế Thành Viên</h1>
+              <p class="text-slate-300 text-lg">Để xây dựng một cộng đồng chạy bộ văn minh, an toàn và phát triển.</p>
+              <div class="mt-6 text-sm text-slate-400">Cập nhật lần cuối: 01/01/2024</div>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 md:p-12 space-y-10">
+                <!-- Section 1 -->
+                <section class="flex items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mr-6"><i data-lucide="users" class="w-6 h-6"></i></div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Tiêu chuẩn thành viên</h2>
+                        <ul class="space-y-3 text-slate-600 list-disc pl-5">
+                            <li>Công dân Việt Nam hoặc người nước ngoài đang sinh sống tại Việt Nam.</li>
+                            <li>Yêu thích bộ môn chạy bộ và mong muốn rèn luyện sức khỏe.</li>
+                            <li>Đăng ký tài khoản đầy đủ thông tin thật trên hệ thống VN RunClub.</li>
+                            <li>Kết nối tài khoản Strava để đồng bộ thành tích trung thực.</li>
+                        </ul>
+                    </div>
+                </section>
+                <hr class="border-gray-100" />
+                <!-- Section 2 -->
+                <section class="flex items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mr-6"><i data-lucide="heart" class="w-6 h-6"></i></div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Quy tắc ứng xử</h2>
+                        <ul class="space-y-3 text-slate-600 list-disc pl-5">
+                            <li><strong>Tôn trọng:</strong> Luôn tôn trọng ban quản trị và các thành viên khác.</li>
+                            <li><strong>Fair-play:</strong> Tuyệt đối không gian lận trong việc ghi nhận thành tích.</li>
+                            <li><strong>Đoàn kết:</strong> Hỗ trợ, giúp đỡ các thành viên mới.</li>
+                        </ul>
+                    </div>
+                </section>
+                <hr class="border-gray-100" />
+                <!-- Section 3 -->
+                <section class="flex items-start">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 mr-6"><i data-lucide="alert-triangle" class="w-6 h-6"></i></div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">3. An toàn & Sức khỏe</h2>
+                        <ul class="space-y-3 text-slate-600 list-disc pl-5">
+                            <li>Thành viên tự chịu trách nhiệm về sức khỏe của bản thân.</li>
+                            <li>Tuân thủ luật giao thông đường bộ khi chạy ngoài đường.</li>
+                            <li>Không tham gia chạy khi đang có chấn thương.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-slate-500 mb-4">Bạn có thắc mắc về quy chế?</p>
+                <button class="text-orange-600 font-bold hover:underline">Liên hệ Ban Quản Trị</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
